@@ -1,30 +1,23 @@
-function TodoApp({notasApp}){//el nombre de ser igual al del atributo que se pasa
-    // (props) | propsComponentes
-    // {notasApp}
-    // const { notas} = props
+import { useState } from "react";
 
-    //console.log(notasApp);
+function TodoApp() { 
+    const [contador, setContador] = useState(0)
 
+// (props) | (props Component)
+// { notasApp }
+// const { notasApp } = props
 
-    const mostrarNotas = (event) =>{
-        console.log(event.target);
-    };
+        console.log(contador);
 
-    console.log(notasApp);
-    return (
-        <>
-            <h1>App de Notas </h1>
-            <ul>
-                <li>{notasApp[0].text}</li>
-                <li>{notasApp[1].text}</li>
-                <button onClick={mostrarNotas}>
-                    Mostrar notas por consola</button>
-            </ul>
+        return (
+         <>
+        <h1>Contador</h1>
+        <p>{contador}</p>
+            <button onClick={() => setContador(contador +1)}>+</button>
+            <button onClick={() => setContador(contador -1)}>-</button>
         </>
-    );
-    
+);
 }
 
 export default TodoApp;
-
-//props propiedades
+// props properties
