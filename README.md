@@ -2,14 +2,34 @@
 
 ![props](img/portada.png)
 
+# Descripción del proyecto
+
+Componente Simple (Encabezado): No maneja datos complejos, solo estructura HTML/JSX limpia.
+
+Uso de Props (ItemTarea): Recibe el parámetro props.texto dinámicamente desde el componente padre.
+
+Uso de Estado (useState): Un interruptor de tipo booleano (true/false) que añade o remueve elementos visuales en base al clic del usuario.
+
+Renderizado de listas (.map()): Transforma un array de strings en una colección de componentes ItemTarea, utilizando el atributo obligatorio key para ayudar a React con el rendimiento.
+
+Tecnologias
+    React
+    Vite
+
+
+
 Las props son datos de solo lectura que se pasan de un componente padre a uno hijo, los datos que reciibe no los puede sobreescribir . El state (estado) es el conjunto de datos internos y mutables que un componente gestiona por sí mismo. 
 
 ejemplo del video: https://youtu.be/2xhAcqhSuVU
 props
+
 ![props](img/props.png)
 
 estados
+
+
 ![estados](img/props.png)
+
 
 
 ¿Por qué es importante usar una key al renderizar una lista de elementos?
@@ -89,4 +109,10 @@ export const people = [{
 
 c Explica con tus propias palabras qué hace la función useState y da un ejemplo de dónde la usaste en tu mini aplicación.
 
-Para mí, useState que perimte a  React "recordar" cosas mientras el usuario interactúa con la página. Por defecto, las variables normales de JavaScript se borran o no hacen que la pantalla se actualice cuando cambian de valor. En cambio, cuando usamos useState, creamos una variable especial que, en cuanto cambia su valor, react renderiza esa parte de la página de forma automática y el usuario vea el cambio al instante.
+Para mí, useState que perimte a  React actulizar la información de las cosas mientras el usuario interactúa con la página. Por defecto, las variables normales de JavaScript se borran o no hacen que la pantalla se actualice cuando cambian de valor. En cambio, cuando usamos useState, creamos una variable especial que, en cuanto cambia su valor, react renderiza esa parte de la página de forma automática y el usuario vea el cambio al instante.
+
+links 
+
+repositorio : https://github.com/ErickOmar4/t3_act5_react_ 
+
+pagina: https://erickomar4.github.io/t3_act5_react_/
